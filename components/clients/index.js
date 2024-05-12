@@ -46,8 +46,6 @@ const StyledClient = styled.section`
       }
 
       &:hover {
-        width: 145px;
-
         ${breakpoints.medium`
           width: 155px;
         `}

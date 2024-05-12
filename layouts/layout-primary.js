@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 // Components
 import GlobalStyles from "../assets/styles/globalStyles";
 import Footer from "../components/footer";
+// import Menu from "../components/menu";
 
 // Libraries
 import AOS from "aos";

@@ -16,6 +16,7 @@ import IconAngular from "../../assets/icons/angular";
 
 // Container
 import Container from "../container";
+import breakpoints from "../../utils/breakpoints";
 
 const StyledTecnologies = styled.section`
   background-color: ${colors.blue__50};
@@ -33,7 +34,9 @@ const StyledTecnologies = styled.section`
     }
 
     &:hover {
-      width: 65px;
+      ${breakpoints.medium`
+        width: 65px;
+      `}
     }
   }
 
