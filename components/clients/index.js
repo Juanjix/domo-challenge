@@ -108,9 +108,17 @@ const StyledClient = styled.section`
 const Clients = () => {
   return (
     <StyledClient>
-      <Container data-aos="fade-left" data-aos-duration="1000">
-        <p className="text--xs text-uppercase">Clients we worked with</p>
-        <div className="client-logo d-flex flex-wrap justify-content-between gap-5">
+      <Container>
+        <p
+          className="text--xs text-uppercase"
+          data-aos="fade-in"
+          data-aos-durations="1000">
+          Clients we worked with
+        </p>
+        <div
+          className="client-logo d-flex flex-wrap justify-content-between gap-5"
+          data-aos="fade-left"
+          data-aos-duration="1000">
           <Tnw />
           <Google />
           <Nike />

@@ -21,8 +21,11 @@ const StyledFooter = styled.section`
   li {
     color: ${colors.grey__100};
     font-size: 14px;
-  }
+    cursor: pointer;
 
+    &:hover{
+      color: ${colors.lavender}
+    }
   .titles {
     color: white;
   }
@@ -76,7 +79,7 @@ const Footer = () => {
             <p className="text--s titles mb-4">Sitemap</p>
             <ul>
               <li>Home</li>
-              <li>Technologies</li>
+              <li>Technology</li>
               <li>Services</li>
               <li>About</li>
             </ul>
