@@ -1,4 +1,7 @@
 "use client";
+
+// Libraries
+
 // Styled
 import styled from "styled-components";
 
@@ -61,9 +64,9 @@ const Hero = () => {
   return (
     <StyledHero>
       <Container>
-        <div className="row">
-          <div className="col-12 col-md-5">
-            <h1 className="mb-4 heading--m">
+        <div className="row" data-aos="fade-in" data-aos-duration="1000">
+          <div className="col-12 col-md-5 ">
+            <h1 className="mb-4 heading--m ">
               We build beautiful and reliable web solutions
             </h1>
             <p className="mb-4">
@@ -76,7 +79,10 @@ const Hero = () => {
           </div>
         </div>
       </Container>
-      <div className="imagen-container">
+      <div
+        className="imagen-container"
+        data-aos="fade-in"
+        data-aos-duration="1000">
         <Image
           src={Background}
           width={600}

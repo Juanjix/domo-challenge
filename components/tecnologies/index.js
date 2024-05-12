@@ -41,7 +41,7 @@ const StyledTecnologies = styled.section`
 const Tecnologies = () => {
   return (
     <StyledTecnologies>
-      <Container>
+      <Container data-aos="fade-right">
         <div className="row justify-content-between align-items-center">
           <div className="col-12 col-md-5 mb-5">
             <h3 className="title mb-3 heading--l">

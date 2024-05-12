@@ -1,0 +1,31 @@
+[data-aos="indicius-fade-in"] {
+  opacity: 0;
+}
+
+[data-aos="indicus-fade-in"].aos-animate {
+  opacity: 1;
+}
+
+[data-aos="indicius-slide-right"] {
+  transform: translateX(-80px);
+}
+
+[data-aos="indicius-slide-right"].aos-animate {
+  transform: translateX(0);
+}
+
+[data-aos="indicius-slide-left"] {
+  transform: translateX(80px);
+}
+
+[data-aos="indicius-slide-left"].aos-animate {
+  transform: translateX(0);
+}
+
+[data-aos="indicius-slide-top"] {
+  transform: translateY(80px);
+}
+
+[data-aos="indicius-slide-top"].aos-animate {
+  transform: translateY(0);
+}

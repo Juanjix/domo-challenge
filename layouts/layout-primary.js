@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 // Components
-// import Menu from "../components/menu";
 import GlobalStyles from "../assets/styles/globalStyles";
 import Footer from "../components/footer";
 
+// Libraries
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const PrimaryLayout = ({ children }) => {
+  // Initializes `AOS` plugin
+  useEffect(() => {
+    AOS.init({
+      once: true,
+    });
+  }, []);
+
   return (
     <>
       <GlobalStyles />
