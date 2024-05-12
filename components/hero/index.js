@@ -40,9 +40,9 @@ const StyledHero = styled.section`
 
     .img {
       position: absolute;
-      bottom: -300px;
+      bottom: -250px;
       right: 0;
-      width: 400px;
+      width: 300px !important;
       height: auto;
 
       ${breakpoints.medium`

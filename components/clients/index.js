@@ -44,10 +44,13 @@ const StyledClient = styled.section`
         stroke: grey;
       }
 
-      ${breakpoints.medium`
-        margin: 25px;
+      // ${breakpoints.medium`
+      //   margin: 25px;
+      // `}
 
-      `}
+      &:hover {
+        width: 155px;
+      }
     }
   }
 

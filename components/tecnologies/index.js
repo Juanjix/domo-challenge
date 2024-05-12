@@ -31,6 +31,10 @@ const StyledTecnologies = styled.section`
       fill: white;
       stroke: white;
     }
+
+    &:hover {
+      width: 65px;
+    }
   }
 
   p {

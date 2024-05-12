@@ -71,7 +71,7 @@ const Services = () => {
         <h3 className="title mb-4">Our Services</h3>
         <p className="paragraph">
           We feel very strong about our skills when it comes to planning,
-          <br />
+          <br className="d-none d-md-block" />
           designing and coding applications. Here is what we love to do!
         </p>
         <div className="row justify-content-center justify-content-md-between gap-1 mt-5">
