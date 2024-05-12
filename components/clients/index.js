@@ -39,17 +39,18 @@ const StyledClient = styled.section`
 
     svg {
       width: 130px;
+
       * {
         fill: grey;
         stroke: grey;
       }
 
-      // ${breakpoints.medium`
-      //   margin: 25px;
-      // `}
-
       &:hover {
-        width: 155px;
+        width: 145px;
+
+        ${breakpoints.medium`
+          width: 155px;
+        `}
       }
     }
   }
