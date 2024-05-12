@@ -117,7 +117,7 @@ const Clients = () => {
         <div
           className="client-logo d-flex flex-wrap justify-content-between gap-5"
           data-aos="fade-left"
-          data-aos-duration="1000">
+          data-aos-duration="1001">
           <Tnw />
           <Google />
           <Nike />
