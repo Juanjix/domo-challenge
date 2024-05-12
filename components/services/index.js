@@ -75,7 +75,10 @@ const Services = () => {
           designing and coding applications. Here is what we love to do!
         </p>
         <div className="row justify-content-center justify-content-md-between gap-1 mt-5">
-          <div className="service-card" data-aos="fade-down">
+          <div
+            className="service-card"
+            data-aos="fade-down"
+            data-aos-duration="1000">
             <Paper />
             <p className="mb-4 service">Business & Product Concept</p>
             <p className="paragraph-small mb-4">
@@ -85,7 +88,10 @@ const Services = () => {
             </p>
             <button className="button button-primary">Learn more</button>
           </div>
-          <div className="service-card" data-aos="fade-down">
+          <div
+            className="service-card"
+            data-aos="fade-down"
+            data-aos-duration="1000">
             <Computer />
             <p className="mb-4 service">Web & Mobile Development</p>
             <p className="paragraph-small mb-4">
@@ -95,7 +101,10 @@ const Services = () => {
             </p>
             <button className="button button-primary">Learn more</button>
           </div>
-          <div className="service-card" data-aos="fade-down">
+          <div
+            className="service-card"
+            data-aos="fade-down"
+            data-aos-duration="1000">
             <UX />
             <p className="mb-4 service">UX & UI Design</p>
             <p className="paragraph-small mb-4">

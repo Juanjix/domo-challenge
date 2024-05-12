@@ -47,7 +47,7 @@ const StyledHero = styled.section`
 
       ${breakpoints.medium`
         top: -180px;
-        width: 600px;
+        width: 600px !important;
         bottom: 0;
       `}
     }

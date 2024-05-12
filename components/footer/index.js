@@ -47,7 +47,7 @@ const StyledFooter = styled.section`
 const Footer = () => {
   return (
     <StyledFooter>
-      <Container data-aos="fade-in">
+      <Container data-aos="fade-in" data-aos-duration="1000">
         <div className="row justify-content-between">
           <div className="col-12 col-md-5 text">
             <p className="text--s titles mb-4">Compleet labs</p>

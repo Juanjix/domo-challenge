@@ -108,7 +108,7 @@ const StyledClient = styled.section`
 const Clients = () => {
   return (
     <StyledClient>
-      <Container data-aos="fade-left">
+      <Container data-aos="fade-left" data-aos-duration="1000">
         <p className="text--xs text-uppercase">Clients we worked with</p>
         <div className="client-logo d-flex flex-wrap justify-content-between gap-5">
           <Tnw />
@@ -122,7 +122,7 @@ const Clients = () => {
           <div
             className="client-card text-start"
             data-aos="flip-left"
-            data-aos-duration="2000">
+            data-aos-duration="1000">
             <h3 className="title mb-3">Get in touch with us</h3>
             <p>Meacenas sed diam eget risus varius</p>
             <p className="mb-3">blandit sit amet non magna</p>
@@ -131,7 +131,7 @@ const Clients = () => {
           <div
             className="client-card text-start"
             data-aos="flip-right"
-            data-aos-duration="2000">
+            data-aos-duration="1000">
             <h3 className="title mb-3">Our Projects</h3>
             <p>Meacenas sed diam eget risus varius</p>
             <p className="mb-3">blandit sit amet non magna</p>
