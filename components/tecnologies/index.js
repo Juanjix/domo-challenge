@@ -48,9 +48,12 @@ const StyledTecnologies = styled.section`
 const Tecnologies = () => {
   return (
     <StyledTecnologies>
-      <Container data-aos="fade-right" data-aos-duration="1000">
+      <Container>
         <div className="row justify-content-between align-items-center">
-          <div className="col-12 col-md-5 mb-5">
+          <div
+            className="col-12 col-md-5 mb-5"
+            data-aos="fade-out"
+            data-aos-duration="1000">
             <h3 className="title mb-3 heading--l">
               We use cutting edge technology
             </h3>
@@ -64,7 +67,10 @@ const Tecnologies = () => {
             </p>
           </div>
 
-          <div className="col-12 col-md-3">
+          <div
+            className="col-12 col-md-3"
+            data-aos="fade-out"
+            data-aos-duration="1000">
             <div>
               <div className="row d-flex justify-content-evenly align-items-center gy-5 gx-5 mb-5">
                 <IconHTML />

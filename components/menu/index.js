@@ -32,7 +32,7 @@ const StyledMenu = styled.nav`
     opacity: 0;
     visibility: hidden;
     transition: all 0.2s ease;
-    padding: 50px;
+    padding: 20px 25px;
 
     ${(props) =>
       props.active &&
@@ -76,7 +76,8 @@ const StyledMenu = styled.nav`
       }
 
       @media (min-width: 992px) {
-        margin: 0 24px 0 0;
+        // margin: 0 24px 0 0;
+        margin-left: 24px;
       }
     }
 
@@ -109,16 +110,32 @@ const StyledMenu = styled.nav`
       flex-direction: column;
       align-items: center;
       padding: 10px;
+      border: 0;
+      background-color: ${colors.grey__200};
 
       span {
         width: 20px;
         height: 4px;
         margin-bottom: 5px;
-        background-color: ${colors.grey__200};
+        background-color: white;
         border-radius: 4px;
 
         &:last-child {
           margin-bottom: 0;
+        }
+      }
+
+      &:nth-child(1) {
+        span {
+          width: 20px;
+          height: 4px;
+          margin-bottom: 5px;
+          background-color: white;
+          border-radius: 4px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
         }
       }
     }
@@ -175,15 +192,18 @@ const Menu = () => {
                 type="button"
                 className="toggler d-md-none"
                 onClick={toggleMenu}>
-                <span />
-                <span />
+                <span className="first" />
+                <span className="second" />
               </button>
             </div>
 
             <ul className="d-md-flex">
-              <li className="menu__item mb-5"></li>
-
               <div className="d-md-flex">
+                <li>
+                  <Link href="/" className="menu__link mb-5 mb-md-0">
+                    Compleet labs
+                  </Link>
+                </li>
                 <li className="menu__item">
                   <Link href="/" className="menu__link">
                     Home

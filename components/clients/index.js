@@ -110,7 +110,7 @@ const Clients = () => {
       <Container>
         <p
           className="text--xs text-uppercase"
-          data-aos="fade-left"
+          data-aos="fade-in"
           data-aos-durations="1000">
           Clients we worked with
         </p>
