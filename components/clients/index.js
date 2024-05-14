@@ -110,13 +110,13 @@ const Clients = () => {
       <Container>
         <p
           className="text--xs text-uppercase"
-          data-aos="fade-in"
+          data-aos="fade-left"
           data-aos-durations="1000">
           Clients we worked with
         </p>
         <div
           className="client-logo d-flex flex-wrap justify-content-between gap-5"
-          data-aos="fade-left"
+          data-aos="fade-in"
           data-aos-duration="1001">
           <Tnw />
           <Google />

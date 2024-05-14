@@ -8,9 +8,7 @@ import { colors } from "../../utils/variables";
 const StyledMenu = styled.nav`
   width: 100vw;
   position: absolute;
-  top: 40px;
-  right: 0;
-  left: 0;
+
   box-sizing: border-box;
   z-index: 9999;
   color: white;
@@ -23,29 +21,13 @@ const StyledMenu = styled.nav`
     margin: 32px auto;
   }
 
-  .menu__logo {
-    width: 120px;
-    height: 32px;
-
-    .logo {
-      width: 100% !important;
-      height: 100% !important;
-    }
-
-    @media (min-width: 992px) {
-      width: 230px;
-      height: 40px;
-    }
-  }
-
   .menu__content {
-    width: 100vw;
+    width: 75vw;
     height: 100vh;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
-    display: none;
     background-color: ${colors.grey__100};
     opacity: 0;
     visibility: hidden;
@@ -61,9 +43,10 @@ const StyledMenu = styled.nav`
       `}
 
     @media (min-width: 990px) {
-      width: auto;
-      height: auto;
       position: relative;
+      width: 100vh;
+      height: auto;
+
       background-color: transparent;
       display: flex;
       opacity: 1;
@@ -73,6 +56,9 @@ const StyledMenu = styled.nav`
 
     .content {
       padding: 32px 0;
+      // width: 100vw;
+      // position: absolute;
+
       @media (min-width: 992px) {
         padding: 0;
       }
@@ -103,11 +89,7 @@ const StyledMenu = styled.nav`
 
       &:focus-visible,
       &:hover {
-        color: ${colors.green__500};
-      }
-
-      &--active {
-        color: ${colors.green__500};
+        color: ${colors.grey__100};
       }
 
       @media (min-width: 992px) {
@@ -125,14 +107,16 @@ const StyledMenu = styled.nav`
     .toggler {
       display: flex;
       flex-direction: column;
-      width: 20px;
+      align-items: center;
+      padding: 10px;
 
       span {
-        width: 100%;
-        height: 2px;
-        margin-bottom: 3px;
+        width: 20px;
+        height: 4px;
+        margin-bottom: 5px;
         background-color: ${colors.grey__200};
         border-radius: 4px;
+
         &:last-child {
           margin-bottom: 0;
         }
@@ -155,7 +139,6 @@ const Menu = () => {
         setActive(false);
       }
     };
-
     document.addEventListener("click", handleOutsideClick);
 
     return () => {
@@ -170,18 +153,13 @@ const Menu = () => {
   return (
     <StyledMenu active={active} ref={ref}>
       <Container>
-        <div className="d-flex align-items-center justify-content-between">
-          {/* <div className="menu__logo">
-            <Image
-              src={IconLogo}
-              className="logo"
-              width="230"
-              height="40"
-              alt=""
-            />
-          </div> */}
-
+        <div className="d-md-flex align-items-center justify-content-between">
           <div className="menu__toggler">
+            <div>
+              <Link href="/" className="menu__link">
+                Compleet labs
+              </Link>
+            </div>
             <button type="button" className="toggler" onClick={toggleMenu}>
               <span />
               <span />
@@ -192,37 +170,51 @@ const Menu = () => {
 
         <div className="menu__content">
           <div className="content">
-            <ul className="d-lg-flex align-items-center">
-              <li className="menu__item">
-                <Link href="/" className="menu__link">
-                  Home
-                </Link>
-              </li>
-              <li className="menu__item">
-                <Link href="/services" className="menu__link">
-                  Services
-                </Link>
-              </li>
-              <li className="menu__item">
-                <Link href="/technologies" className="menu__link">
-                  Technologies
-                </Link>
-              </li>
-              <li className="menu__item">
-                <Link href="/case-studies" className="menu__link">
-                  Case Studies
-                </Link>
-              </li>
-              <li className="menu__item">
-                <Link href="/about" className="menu__link">
-                  About
-                </Link>
-              </li>
-              <li className="menu__item">
-                <Link href="/hire-us" className="menu__link">
-                  Hire us
-                </Link>
-              </li>
+            <div className="menu__toggler">
+              <button
+                type="button"
+                className="toggler d-md-none"
+                onClick={toggleMenu}>
+                <span />
+                <span />
+              </button>
+            </div>
+
+            <ul className="d-md-flex">
+              <li className="menu__item mb-5"></li>
+
+              <div className="d-md-flex">
+                <li className="menu__item">
+                  <Link href="/" className="menu__link">
+                    Home
+                  </Link>
+                </li>
+                <li className="menu__item">
+                  <Link href="/services" className="menu__link">
+                    Services
+                  </Link>
+                </li>
+                <li className="menu__item">
+                  <Link href="/technologies" className="menu__link">
+                    Technologies
+                  </Link>
+                </li>
+                <li className="menu__item">
+                  <Link href="/case-studies" className="menu__link">
+                    Case Studies
+                  </Link>
+                </li>
+                <li className="menu__item">
+                  <Link href="/about" className="menu__link">
+                    About
+                  </Link>
+                </li>
+                <li className="menu__item">
+                  <Link href="/hire-us" className="menu__link">
+                    Hire us
+                  </Link>
+                </li>
+              </div>
             </ul>
           </div>
         </div>
